@@ -1,12 +1,12 @@
 import { useParams, useNavigate } from "react-router-dom";
-import { todoType } from "../interfaces/todo";
+import { TodoType } from "../interfaces/todo";
 import { useEffect, useState } from "react";
 import { BASE_API } from "../constants/base";
 
 const Edit = () => {
     let { id } = useParams();
 
-    const [todo, setTodo] = useState<todoType>({
+    const [todo, setTodo] = useState<TodoType>({
         id: 0,
         todo: "",
     });

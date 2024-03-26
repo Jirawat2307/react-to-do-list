@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 import { BASE_API } from "./constants/base";
 import { Link } from "react-router-dom";
-import { todoType } from "./interfaces/todo";
+import { TodoType } from "./interfaces/todo";
 import Add from "./components/Add";
 
 const App = () => {
-    const [todos, setTodos] = useState<todoType[]>([]);
+    const [todos, setTodos] = useState<TodoType[]>([]);
     const [isLoading, setIsLoading] = useState<boolean>(false);
     const [isAdd, setIsAdd] = useState<boolean>(false);
 
@@ -52,7 +52,7 @@ const App = () => {
             <Add props={isAddFinish} />
             {isLoading && "Loading"}
             {!isLoading &&
-                todos.map((todo: todoType) => (
+                todos.map((todo: TodoType) => (
                     <div key={todo.id} className="todo">
                         <h3>{todo.todo}</h3>
                         <div style={{ display: "flex", alignContent: "center" }}>

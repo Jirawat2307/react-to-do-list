@@ -1,4 +1,4 @@
-export interface todoType {
+export interface TodoType {
     id: number;
     todo: string;
 }
