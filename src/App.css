@@ -8,7 +8,7 @@ body {
 }
 
 .todoBlock, .editBlock {
-    min-width: 180px;
+    min-width: 240px;
     padding: 1rem;
     border: 1px solid #7a7a7a;
     border-radius: 0.5rem;

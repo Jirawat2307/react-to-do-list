@@ -41,8 +41,8 @@ const Edit = () => {
                     "Content-Type": "application/json",
                 },
                 body: JSON.stringify({ todo: todo.todo }),
-            }).then(()=> {
-                navigate('/')
+            }).then(() => {
+                navigate("/");
             });
         } catch (error) {
             console.log("error", error);
@@ -62,6 +62,7 @@ const Edit = () => {
                 onChange={(e) => {
                     onChangeTodo(e);
                 }}
+                required
             />
             <button
                 onClick={() => {
